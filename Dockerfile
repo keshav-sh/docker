@@ -1,4 +1,4 @@
-FROM python:3.5.0b3-slim
+FROM python:3.12
 RUN apt -y update
 COPY . /opt
 WORKDIR /opt
