@@ -1,0 +1,7 @@
+FROM python:3.5.0b3-slim
+RUN apt -y update
+COPY . /opt
+WORKDIR /opt
+RUN pip install -r read.txt
+EXPOSE 9000
+CMD ["python3","manage.py","runserver","0.0.0.0:9000"]
